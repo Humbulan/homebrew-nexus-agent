@@ -1,26 +1,26 @@
 class NexusAgent < Formula
   desc "Lightweight single-binary service monitor with Slack alerts"
   homepage "https://github.com/Humbulan/nexus-agent"
-  version "0.1.1"
+  version "0.1.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.1/nexus-agent-darwin-arm64"
-      sha256 "7355ebb984f8404d6a1abb40e679c090480c59fc3ac53857264113e48f180f33"
+      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.2/nexus-agent-darwin-arm64"
+      sha256 "2d138858092cc7f728227911440ecb98f18f10cf15118099f88555c4609996a2"
     else
-      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.1/nexus-agent-darwin-amd64"
-      sha256 "09af73bd656ee7c171fa36e2474ea6bdb1c1ba95bf6c80b67c894e926dd43ade"
+      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.2/nexus-agent-darwin-amd64"
+      sha256 "85fd6752278cd334d617df0a811bbe2dbd6859a2b61ab5d141d36cc6764d14a4"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
-      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.1/nexus-agent-linux-arm64"
-      sha256 "225d97bf2fa84d25ead879b6113bd82ecd4aebb9a7460c9f8cac38e51231fb6f"
+      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.2/nexus-agent-linux-arm64"
+      sha256 "2794082c7326621cbc3b0b4f09f713303167170ded76a4ae488b8cfdbf225953"
     else
-      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.1/nexus-agent-linux-amd64"
-      sha256 "f070af7084ce0083d25eec8b3a79743fbab3331c6983e26fa97e899b4259603a"
+      url "https://github.com/Humbulan/nexus-agent/releases/download/v0.1.2/nexus-agent-linux-amd64"
+      sha256 "c81d6ca8f3db3a79d4d7a57de32cddf67f014393f5e80d363e7086c3aa02243e"
     end
   end
 
